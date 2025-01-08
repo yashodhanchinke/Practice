@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <div id="result" style=" font-size: medium; margin-top: 20px;"></div>
+
+    <script>
+       
+        var a = parseFloat(prompt("Enter the first number:"));
+        var b = parseFloat(prompt("Enter the second number:"));
+
+       
+        var sum = a + b;
+        var difference = a - b;
+        var product = a * b;
+        var quotient =  a / b ;
+        var modulus = a % b;
+
+        
+        document.getElementById('result').innerHTML = `
+            You entered: <br>
+            Number 1: ${a} <br>
+            Number 2: ${b} <br><br>
+            Results: <br>
+            Sum (+): ${sum} <br>
+            Difference (-): ${difference} <br>
+            Product (*): ${product} <br>
+            Quotient (/): ${quotient} <br>
+            Modulus (%): ${modulus}
+        `;
+    </script>
+</body>
+</html>
